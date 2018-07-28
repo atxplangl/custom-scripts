@@ -1,0 +1,30 @@
+## install fpm
+
+## package python and pip to /opt/python2.7/bin/
+/opt/python2.7/bin/2to3
+/opt/python2.7/bin/idle
+/opt/python2.7/bin/pip
+/opt/python2.7/bin/pip2
+/opt/python2.7/bin/pip2.7
+/opt/python2.7/bin/pydoc
+/opt/python2.7/bin/python
+/opt/python2.7/bin/python-config
+/opt/python2.7/bin/python2
+/opt/python2.7/bin/python2-config
+/opt/python2.7/bin/python2.7
+/opt/python2.7/bin/python2.7-config
+/opt/python2.7/bin/smtpd.py
+/opt/python2.7/lib/*
+...
+## setuptools
+/opt/acx-python-libs-2.7.6/distribute-0.6.35
+/opt/acx-python-libs-2.7.6/distribute-0.6.35/CHANGES.txt
+/opt/acx-python-libs-2.7.6/distribute-0.6.35/CONTRIBUTORS.txt
+/opt/acx-python-libs-2.7.6/distribute-0.6.35/DEVGUIDE.txt
+/opt/acx-python-libs-2.7.6/distribute-0.6.35/MANIFEST.in
+/opt/acx-python-libs-2.7.6/distribute-0.6.35/PKG-INFO
+/opt/acx-python-libs-2.7.6/distribute-0.6.35/README.txt
+/opt/acx-python-libs-2.7.6/distribute-0.6.35/_markerlib
+/opt/acx-python-libs-2.7.6/distribute-0.6.35/_markerlib/__init__.py
+/opt/acx-python-libs-2.7.6/distribute-0.6.35/_markerlib/markers.py
+... 

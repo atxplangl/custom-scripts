@@ -1,0 +1,61 @@
+#!/bin/sh
+# chkconfig: 2345 20 80
+# description: collectd service
+
+NOW=`date +%m%d.%H%M`
+THISFILE=`basename $0`
+
+# Get function from functions library
+. /etc/init.d/functions
+
+############################################
+# starts the service
+############################################
+start() {
+
+		### start service commands ###
+        
+        ### add lock file ###
+		touch /var/lock/subsys/FOO
+}
+
+############################################
+# stop
+############################################
+
+stop() {
+		### kill proc command from functions lib ###
+		killproc FOO
+
+        ### Now, delete the lock file ###
+        rm -f /var/lock/subsys/FOO
+        echo
+}
+
+############################################
+# main
+#
+# source config routines, invoke supplied command
+############################################
+
+case "$1" in
+   	start )
+		start
+	;;
+	stop )
+ 		stop
+	;;
+	status )
+ 		status FOO
+	;;
+	restart | reload )
+ 		stop
+		start
+	;;
+	* )
+		echo "usage: $0 <start|stop|status|restart|reload>"
+		exit 1
+	;;
+esac
+
+exit 0
