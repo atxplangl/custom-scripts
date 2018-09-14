@@ -1,3 +1,6 @@
+PYTHON_VERSION=${1?PYTHON Version is required}
+
+
 if [[ $PYTHON_VERSION == "2.7" ]] ; then
 
 ##package python lib using 2.7 version
